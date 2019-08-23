@@ -1,0 +1,64 @@
+ <html>
+<head>
+    <style type="text/css">
+        body {
+            background-color: black;
+            color: yellow;
+            text-align: center;
+        }
+        div{
+            width: 50%;
+            margin : 10px  auto;
+            padding: 10px;
+           
+        }
+        div.longText{
+            border : 5px solid white; 
+        }
+    </style>
+    
+</head>    
+<body>
+      <h1>Personal Info App</h1>
+    <div>
+    <h3>My Summer</h3>
+    <p>I did a lot of stuff this summer, i played video games, i did summer school, and i worked, and i helped my friend fix his fence</p>
+    <h3>Post HighSchool Plans</h3>
+    <p>i hope to be able to be somewhere around the world having fun doing programming</p>
+    <img src='gohan.jpg' width=400>
+    </div>
+    
+
+    
+ <script>
+        
+   //let name = "Caleb Adkins"
+   //let age = 17
+   //create an object called person 
+   let person = {
+       //key : value
+       "firstName" : "Caleb",
+       "lastName" : "Adkins",
+       "age" : 17,
+       "favColor" : "red",
+       "siblings": ["Hailey"],
+       "favArtists": ["lil skies", "shoreline mafia"],
+       'favVideogame": ["fortnite"]
+       
+   }
+   console.log(person)
+   console.log(person.age)  
+        
+       /*let elem = document.createElement('h3')
+        elem.innerHTML = person.firstName
+        document.body.appendChild(elem)*/
+        
+        let elem = document.createElement('div')
+        elem.classList.add('shortText')
+        elem.innerHTML = `<h3>Name</h3>
+${person.firstName} ${person.lastName}`
+        document.body.appenChild
+    </script>   
+</body>   
+</html>
+
